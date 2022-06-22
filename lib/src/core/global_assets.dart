@@ -1,0 +1,11 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+
+String onBoard_1 = 'assets/images/onboarning_1.png';
+String onBoard_2 = 'assets/images/onboarning_2.png';
+String onBoard_3 = 'assets/images/onboarning_3.png';
+String onBoard_4 = 'assets/images/onboarning_4.png';
+
+SvgPicture athleticLogo({Color? color}) => SvgPicture.asset('assets/icons/logo_athletic.svg', color: color,);
+SvgPicture icoAgreement({Color? color}) => SvgPicture.asset('assets/icons/ico_convenios.svg', color: color,);
+SvgPicture icoBackArrow({Color? color}) => SvgPicture.asset('assets/icons/ico_arrow.svg', color: color,);
