@@ -31,3 +31,37 @@ flutter:
   assets:
     - assets/icons/
     - assets/images/
+
+  fonts:
+    - family: edosz
+      fonts:
+        - asset: fonts/edosz.ttf
+          style: normal
+    - family: LexendBold
+      fonts:
+        - asset: fonts/Lexend-Bold.ttf
+          style: normal
+    - family: LexendExtraBold
+      fonts:
+        - asset: fonts/Lexend-ExtraBold.ttf
+          style: normal
+    - family: LexendLight
+      fonts:
+        - asset: fonts/Lexend-Light.ttf
+          style: normal
+    - family: LexendMedium
+      fonts:
+        - asset: fonts/Lexend-Medium.ttf
+          style: normal
+    - family: LexendRegular
+      fonts:
+        - asset: fonts/Lexend-Regular.ttf
+          style: normal
+    - family: LexendSemiBold
+      fonts:
+        - asset: fonts/Lexend-SemiBold.ttf
+          style: normal
+    - family: LexendThin
+      fonts:
+        - asset: fonts/Lexend-Thin.ttf
+          style: normal

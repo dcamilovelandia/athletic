@@ -9,3 +9,5 @@ String onBoard_4 = 'assets/images/onboarning_4.png';
 SvgPicture athleticLogo({Color? color}) => SvgPicture.asset('assets/icons/logo_athletic.svg', color: color,);
 SvgPicture icoAgreement({Color? color}) => SvgPicture.asset('assets/icons/ico_convenios.svg', color: color,);
 SvgPicture icoBackArrow({Color? color}) => SvgPicture.asset('assets/icons/ico_arrow.svg', color: color,);
+SvgPicture icoCopy({Color? color}) => SvgPicture.asset('assets/icons/ico_copy.svg', color: color,);
+SvgPicture icoShare({Color? color}) => SvgPicture.asset('assets/icons/ico_share.svg', color: color,);

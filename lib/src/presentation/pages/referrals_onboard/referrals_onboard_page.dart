@@ -12,7 +12,7 @@ class ReferralsOnboardPage extends StatelessWidget {
     return GetBuilder<ReferralsOnboardController>(
       init: ReferralsOnboardController(),
       builder: (_) => Scaffold(
-        backgroundColor: backgroundGray,
+        backgroundColor: backgroundWhiteColor,
         body: Stack(
           children: [
             /// image
@@ -74,7 +74,7 @@ class ReferralsOnboardPage extends StatelessWidget {
                               /// next onBoard page
                               GlobalCustomRaisedButton(
                                 width: (screenUtil.screenWidth / 2) - 120.w,
-                                color: HexColor.fromHex('#E50051'),
+                                color: redEuphoriaColor,
                                 textColor: Colors.white,
                                 buttonText: 'Siguiente',
                                 onPress: _.changePage,
@@ -119,9 +119,9 @@ class ReferralsOnboardPage extends StatelessWidget {
         RichText(
           text: TextSpan(
             children: [
-              _subTitleSpan(subTitle: 'meses adiciones a tu plan Refiere a todos tus '),
-              _subTitleBoldSpan(subTitle: 'amigos y conocidos '),
-              _subTitleSpan(subTitle: '¡Empieza ahora!')
+              subTitleSpan(subTitle: 'meses adiciones a tu plan Refiere a todos tus '),
+              subTitleBoldSpan(subTitle: 'amigos y conocidos '),
+              subTitleSpan(subTitle: '¡Empieza ahora!')
             ]
           ),
         )
@@ -144,12 +144,12 @@ class ReferralsOnboardPage extends StatelessWidget {
         RichText(
           text: TextSpan(
               children: [
-                _subTitleSpan(subTitle: 'Ganar meses de entrenamiento es '),
-                _subTitleBoldSpan(subTitle: 'muy fácil.\n'),
-                _subTitleSpan(subTitle: 'Ingresa la información de tus amigos o conocidos en nuestra plataforma y regálales '),
-                _subTitleBoldSpan(subTitle: '3 días de cortesía '),
-                _subTitleSpan(subTitle: 'en '),
-                _subTitleBoldSpan(subTitle: 'Athletic '),
+                subTitleSpan(subTitle: 'Ganar meses de entrenamiento es '),
+                subTitleBoldSpan(subTitle: 'muy fácil.\n'),
+                subTitleSpan(subTitle: 'Ingresa la información de tus amigos o conocidos en nuestra plataforma y regálales '),
+                subTitleBoldSpan(subTitle: '3 días de cortesía '),
+                subTitleSpan(subTitle: 'en '),
+                subTitleBoldSpan(subTitle: 'Athletic '),
               ]
           ),
         )
@@ -173,10 +173,10 @@ class ReferralsOnboardPage extends StatelessWidget {
         RichText(
           text: TextSpan(
               children: [
-                _subTitleSpan(subTitle: 'Si tu amigo se afilia a '),
-                _subTitleBoldSpan(subTitle: 'Athletic'),
-                _subTitleSpan(subTitle: ', él y tu recibirán '),
-                _subTitleBoldSpan(subTitle: 'un mes adicional de entrenamiento'),
+                subTitleSpan(subTitle: 'Si tu amigo se afilia a '),
+                subTitleBoldSpan(subTitle: 'Athletic'),
+                subTitleSpan(subTitle: ', él y tu recibirán '),
+                subTitleBoldSpan(subTitle: 'un mes adicional de entrenamiento'),
               ]
           ),
         )
@@ -192,26 +192,6 @@ class ReferralsOnboardPage extends StatelessWidget {
           fontSize: 22,
           fontWeight: FontWeight.w600
       ),
-    );
-  }
-  /// span without bold text
-  TextSpan _subTitleSpan({required subTitle}) {
-    return TextSpan(
-        text: subTitle,
-        style: const TextStyle(
-            color: Colors.white,
-            fontWeight: FontWeight.w400
-        )
-    );
-  }
-  /// span with bold text
-  TextSpan _subTitleBoldSpan({required subTitle}) {
-    return TextSpan(
-        text: subTitle,
-        style: const TextStyle(
-            color: Colors.white,
-            fontWeight: FontWeight.w600
-        )
     );
   }
 
@@ -239,7 +219,7 @@ class ReferralsOnboardPage extends StatelessWidget {
                   colors: [
                     Colors.black.withOpacity(0.5),
                     Colors.transparent,
-                    Colors.black.withOpacity(0.8)
+                    Colors.black.withOpacity(0.9)
                   ],
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter

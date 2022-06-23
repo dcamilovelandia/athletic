@@ -32,7 +32,7 @@ class GlobalCustomRaisedButton extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
             borderRadius: globalRadius,
-            color: enabled ? color : grey,
+            color: enabled ? color : pearlShineColor,
             border: borderColor != null ? Border.all(color: borderColor!) : null,
             boxShadow: [BoxShadow(
                 color: shadowColor,

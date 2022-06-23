@@ -8,6 +8,8 @@ export 'package:athletic/src/presentation/pages/referrals_onboard/referral_onboa
 
 /// pages
 export 'package:athletic/src/presentation/pages/referrals/referrals_page.dart';
+export 'package:athletic/src/presentation/pages/referrals/sub_pages/my_referrals_page.dart';
+export 'package:athletic/src/presentation/pages/referrals/sub_pages/referral_page.dart';
 export 'package:athletic/src/presentation/pages/referrals_onboard/referrals_onboard_page.dart';
 
 /// routes
@@ -16,7 +18,8 @@ export 'package:athletic/src/presentation/routes/app_routes.dart';
 
 /// global
 export 'package:athletic/src/core/global_assets.dart';
-export 'package:athletic/src/core/global_properties.dart';
+export 'package:athletic/src/core/global_colors.dart';
+export 'package:athletic/src/core/global_styles.dart';
 
 /// extensions
 export 'package:athletic/src/core/extension/hexColor.dart';
@@ -26,4 +29,8 @@ export 'package:athletic/src/presentation/widgets/animations/animated_onTap_widg
 
 /// buttons
 export 'package:athletic/src/presentation/widgets/buttons/global_custom_raised_button.dart';
+export 'package:athletic/src/presentation/pages/referrals/widgets/page_button.dart';
 
+
+/// widgets
+export 'package:athletic/src/presentation/pages/referrals/widgets/referral_data_textField.dart';
