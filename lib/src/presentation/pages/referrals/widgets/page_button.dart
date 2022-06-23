@@ -22,6 +22,7 @@ class PageButton extends StatelessWidget {
     return AnimatedOnTapWidget(
       onTap: onTap,
       child: Container(
+        height: 30,
         decoration: BoxDecoration(
           color: backgroundWhiteColor,
           boxShadow: globalShadow,

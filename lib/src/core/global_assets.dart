@@ -11,3 +11,4 @@ SvgPicture icoAgreement({Color? color}) => SvgPicture.asset('assets/icons/ico_co
 SvgPicture icoBackArrow({Color? color}) => SvgPicture.asset('assets/icons/ico_arrow.svg', color: color,);
 SvgPicture icoCopy({Color? color}) => SvgPicture.asset('assets/icons/ico_copy.svg', color: color,);
 SvgPicture icoShare({Color? color}) => SvgPicture.asset('assets/icons/ico_share.svg', color: color,);
+SvgPicture icoDelete({Color? color}) => SvgPicture.asset('assets/icons/ico_eliminar.svg', color: color,);

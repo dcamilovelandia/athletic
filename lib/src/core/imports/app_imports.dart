@@ -34,3 +34,4 @@ export 'package:athletic/src/presentation/pages/referrals/widgets/page_button.da
 
 /// widgets
 export 'package:athletic/src/presentation/pages/referrals/widgets/referral_data_textField.dart';
+export 'package:athletic/src/presentation/pages/referrals/widgets/referral_data_textField.dart';

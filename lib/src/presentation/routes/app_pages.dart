@@ -5,12 +5,12 @@ abstract class AppPages {
   static List<GetPage> get appPages => [
     GetPage(
         name: AppRoutes.referralsOnboardPage,
-        page: () => ReferralsOnboardPage(),
+        page: () => const ReferralsOnboardPage(),
         binding: ReferralsOnboardBinding()
     ),
     GetPage(
         name: AppRoutes.referralsPage,
-        page: () => ReferralsPage(),
+        page: () => const ReferralsPage(),
         binding: ReferralsBinding()
     )
   ];
