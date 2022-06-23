@@ -1,5 +1,4 @@
 import 'package:athletic/src/core/imports/app_imports.dart';
-import 'package:expandable_page_view/expandable_page_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -84,12 +83,11 @@ class ReferralsPage extends StatelessWidget {
               ),
             ),
           ),
-          body: SingleChildScrollView(
-            physics: const BouncingScrollPhysics(),
-            controller: _.scrollController,
-            child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: 80.w),
-              child: ExpandablePageView(
+          body: Padding(
+            padding: EdgeInsets.symmetric(horizontal: 80.w),
+            child: SizedBox(
+              height: screenUtil.screenHeight - 300.h,
+              child: PageView(
                 controller: _.pageController,
                 scrollDirection: Axis.horizontal,
                 physics: const NeverScrollableScrollPhysics(),

@@ -12,3 +12,6 @@ SvgPicture icoBackArrow({Color? color}) => SvgPicture.asset('assets/icons/ico_ar
 SvgPicture icoCopy({Color? color}) => SvgPicture.asset('assets/icons/ico_copy.svg', color: color,);
 SvgPicture icoShare({Color? color}) => SvgPicture.asset('assets/icons/ico_share.svg', color: color,);
 SvgPicture icoDelete({Color? color}) => SvgPicture.asset('assets/icons/ico_eliminar.svg', color: color,);
+SvgPicture icoUser({Color? color}) => SvgPicture.asset('assets/icons/ico_user.svg', color: color,);
+SvgPicture icoArrowDown({Color? color}) => SvgPicture.asset('assets/icons/ico_arrow_down.svg', color: color,);
+SvgPicture icoArrowUp({Color? color}) => SvgPicture.asset('assets/icons/ico_arrow_up.svg', color: color,);

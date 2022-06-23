@@ -35,6 +35,7 @@ class MyApp extends StatelessWidget {
               primarySwatch: Colors.red,
               dividerColor: Colors.transparent,
               canvasColor: Colors.transparent,
+              splashColor:  Colors.transparent,
               useMaterial3: true),
           title: 'Atletic',
           initialRoute: AppRoutes.referralsOnboardPage,
