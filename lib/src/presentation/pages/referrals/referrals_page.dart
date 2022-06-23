@@ -86,7 +86,7 @@ class ReferralsPage extends StatelessWidget {
           body: Padding(
             padding: EdgeInsets.symmetric(horizontal: 80.w),
             child: SizedBox(
-              height: screenUtil.screenHeight - 300.h,
+              height: screenUtil.screenHeight - (300.h + screenUtil.bottomBarHeight),
               child: PageView(
                 controller: _.pageController,
                 scrollDirection: Axis.horizontal,

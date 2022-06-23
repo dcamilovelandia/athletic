@@ -84,7 +84,7 @@ class ReferralsController extends GetxController {
 
   /// send referrals data to server
   sendFormToServer() {
-
+    globalBottomSheet(child: InfoPage());
   }
 
   /// show toast message

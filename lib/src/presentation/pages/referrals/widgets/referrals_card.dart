@@ -30,7 +30,7 @@ class ReferralCard extends StatelessWidget {
             children: [
               SizedBox(
                 height: 50,
-                width: (screenUtil.screenWidth / 2),
+                width: screenUtil.screenWidth / 2,
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [

@@ -11,6 +11,7 @@ export 'package:athletic/src/presentation/pages/referrals/referrals_page.dart';
 export 'package:athletic/src/presentation/pages/referrals/sub_pages/my_referrals_page.dart';
 export 'package:athletic/src/presentation/pages/referrals/sub_pages/referral_page.dart';
 export 'package:athletic/src/presentation/pages/referrals_onboard/referrals_onboard_page.dart';
+export 'package:athletic/src/presentation/pages/referrals/sub_pages/info_page.dart';
 
 /// routes
 export 'package:athletic/src/presentation/routes/app_pages.dart';
@@ -20,6 +21,7 @@ export 'package:athletic/src/presentation/routes/app_routes.dart';
 export 'package:athletic/src/core/global_assets.dart';
 export 'package:athletic/src/core/global_colors.dart';
 export 'package:athletic/src/core/global_styles.dart';
+export 'package:athletic/src/core/global_functions.dart';
 
 /// extensions
 export 'package:athletic/src/core/extension/hexColor.dart';
