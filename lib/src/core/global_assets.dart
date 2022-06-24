@@ -15,3 +15,5 @@ SvgPicture icoDelete({Color? color}) => SvgPicture.asset('assets/icons/ico_elimi
 SvgPicture icoUser({Color? color}) => SvgPicture.asset('assets/icons/ico_user.svg', color: color,);
 SvgPicture icoArrowDown({Color? color}) => SvgPicture.asset('assets/icons/ico_arrow_down.svg', color: color,);
 SvgPicture icoArrowUp({Color? color}) => SvgPicture.asset('assets/icons/ico_arrow_up.svg', color: color,);
+SvgPicture icoEmail({Color? color}) => SvgPicture.asset('assets/icons/ico_mail.svg', color: color,);
+SvgPicture icoAthletic({Color? color}) => SvgPicture.asset('assets/icons/ico_athletic.svg', color: color,);

@@ -44,7 +44,7 @@ class _ReferralDataTextFieldState extends State<ReferralDataTextField> {
 
   _validateFields(String? value) {
     if(value == null || value.isEmpty) {
-      return 'Debe llenar este campo';
+      return '';
     } else {
       return null;
     }
@@ -54,7 +54,8 @@ class _ReferralDataTextFieldState extends State<ReferralDataTextField> {
     widget.onChange({
       'username': username.text.trim(),
       'email': email.text.trim(),
-      'phoneNumber': phoneNumber.text.trim()
+      'phoneNumber': phoneNumber.text.trim(),
+      'validate' : formKey.currentState!.validate()
     });
   }
 
@@ -78,7 +79,7 @@ class _ReferralDataTextFieldState extends State<ReferralDataTextField> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             TextFormField(
-              controller: username,
+                controller: username,
                 focusNode: usernameNode,
                 keyboardType: TextInputType.name,
                 textInputAction: TextInputAction.next,
@@ -89,12 +90,15 @@ class _ReferralDataTextFieldState extends State<ReferralDataTextField> {
                     color: black
                 ),
                 decoration: InputDecoration(
-                  hintText: 'Nombre de tu amigo',
-                  hintStyle: textStyle(
-                      size: 13,
-                      fontWeight: FontWeight.w400,
-                      color: black.withOpacity(0.5)
-                  ),
+                    hintText: 'Nombre de tu amigo',
+                    hintStyle: textStyle(
+                        size: 13,
+                        fontWeight: FontWeight.w400,
+                        color: black.withOpacity(0.5)
+                    ),
+                    errorBorder: UnderlineInputBorder(
+                        borderSide: BorderSide(color: blackUniverseColor.withOpacity(0.4))
+                    )
                 ),
                 onChanged: _onChange,
                 validator: (value) => _validateFields(value)
@@ -114,12 +118,15 @@ class _ReferralDataTextFieldState extends State<ReferralDataTextField> {
                   color: black
               ),
               decoration: InputDecoration(
-                hintText: 'Correo electronico',
-                hintStyle: textStyle(
-                    size: 13,
-                    fontWeight: FontWeight.w400,
-                    color: black.withOpacity(0.5)
-                ),
+                  hintText: 'Correo electronico',
+                  hintStyle: textStyle(
+                      size: 13,
+                      fontWeight: FontWeight.w400,
+                      color: black.withOpacity(0.5)
+                  ),
+                  errorBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(color: blackUniverseColor.withOpacity(0.4))
+                  )
               ),
               onChanged: _onChange,
               validator: (value) => _validateFields(value),
@@ -139,12 +146,15 @@ class _ReferralDataTextFieldState extends State<ReferralDataTextField> {
                   color: black
               ),
               decoration: InputDecoration(
-                hintText: '(000) 000 00 00',
-                hintStyle: textStyle(
-                    size: 13,
-                    fontWeight: FontWeight.w400,
-                    color: black.withOpacity(0.5)
-                ),
+                  hintText: '(000) 000 00 00',
+                  hintStyle: textStyle(
+                      size: 13,
+                      fontWeight: FontWeight.w400,
+                      color: black.withOpacity(0.5)
+                  ),
+                  errorBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(color: blackUniverseColor.withOpacity(0.4))
+                  )
               ),
               onChanged: _onChange,
               validator: (value) => _validateFields(value),

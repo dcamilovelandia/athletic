@@ -75,7 +75,7 @@ class ReferralPage extends StatelessWidget {
                       mainAxisSize: MainAxisSize.min,
                       children: [
                         AnimatedOnTapWidget(
-                          onTap: _.onTapCopyReferralCode,
+                          onTap: () => _.openCopyMessageSheet(controller: _),
                           child: SizedBox(
                             height: 24,
                             width: 24,
@@ -118,12 +118,25 @@ class ReferralPage extends StatelessWidget {
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Text(
-                                    'Amigo ${index + 1}',
-                                    style: textStyle(
-                                        size: 13,
-                                        fontWeight: FontWeight.w600
-                                    ),
+                                  Row(
+                                    children: [
+                                      Text(
+                                        'Amigo ${index + 1}',
+                                        style: textStyle(
+                                            size: 13,
+                                            fontWeight: FontWeight.w600
+                                        ),
+                                      ),
+                                      if(!e['validate'])
+                                        Text(
+                                          ' (Debes llenar todos los campos)',
+                                          style: textStyle(
+                                              size: 13,
+                                              fontWeight: FontWeight.w600,
+                                            color: redEuphoriaColor
+                                          ),
+                                        ),
+                                    ],
                                   ),
                                   if(index != 0)
                                     Padding(
