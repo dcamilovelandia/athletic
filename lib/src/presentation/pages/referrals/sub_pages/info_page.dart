@@ -251,5 +251,4 @@ class InfoPage extends StatelessWidget {
       ],
     );
   }
-
 }

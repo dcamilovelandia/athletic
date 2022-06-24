@@ -121,7 +121,7 @@ class ReferralPage extends StatelessWidget {
                                   Row(
                                     children: [
                                       Text(
-                                        'Amigo ${index + 1}',
+                                        'Amigo ${index + 1} ',
                                         style: textStyle(
                                             size: 13,
                                             fontWeight: FontWeight.w600
